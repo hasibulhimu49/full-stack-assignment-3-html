@@ -3,12 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is my protfolio.">
+    <meta name="keywords" content="protfolio, cv, info"/>
+
+    <header>
+      <nav>
+              <a href="#home">Introducdtion</a><br/>
+              <a href="#Skills">Skills & Expertise</a><br/>
+              <a href="#Projects">Projects</a></li><br/>
+              <a href="#Education and Experience">Education and Experience</a><br/>
+              <a href="#Form">Contact Form</a>
+      </nav>
+  </header>
+  
+
     <title>Assignment_3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        font-family: "Ubuntu", sans-serif;
+      }
+    </style>
   </head>
 
   <body>
     <!--Section: Introducdtion-->
-    <h1>Mohammad Hasibul Hasan</h1>
+    <section id="home">
+      <h1>Mohammad Hasibul Hasan</h1>
     <p>
       I am a student of Bangladesh University of Business and Technology<strong>(BUBT)</strong>
       department of computer science and engineeing.I am a app developer with 2
@@ -19,86 +40,108 @@
       for clients.
     </p>
     <hr />
+    </section>
+    
 
     <!--Section: Skills and Expertise-->
-    <section>
-      <h2>Skills</h2>
-      <ul type="circle">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li><b>JavaScript</b></li>
-        <li><strong>MongoDB</strong></li>
-        <li><i>Android studio</i></li>
-      </ul>
+    <section id="Skills">
+      <div>
+        <h2>Skills</h2>
+        <ul type="circle">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li><b>JavaScript</b></li>
+          <li><strong>MongoDB</strong></li>
+          <li><i>Android studio</i></li>
+        </ul>
+      </div>
 
-      <h2>Expertise</h2>
-      <ol type="1">
-        <li>Survay</li>
-        <li>Analysis</li>
-        <li>Design</li>
-        <li>Implement</li>
-        <li>Testing</li>
-      </ol>
+      <div>
+        <h3>Skill progress</h3>
+        <label for="htmlProgress">HTML:</label>
+        <progress id="htmlProgress" value="90" max="100"></progress><br/>
+        <label for="cssProgress">CSS:</label>
+        <progress id="cssProgress" value="70" max="100"></progress>
+      </div>
+      
+<div>
+  <h2>Expertise</h2>
+  <ol type="1">
+    <li>Survay</li>
+    <li>Analysis</li>
+    <li>Design</li>
+    <li>Implement</li>
+    <li>Testing</li>
+  </ol>
+</div>  
     </section>
 
     <!--Section: Projects-->
-    <section>
+    <section id="Projects">
       <h2>Projects</h2>
-
       <ol style="1">
-        <li>
-          <a
-            href="https://github.com/hasibulhimu49/Java_Project"
-            target="_blank"
-            style="text-decoration: "
-          >
-            <img
-              src="./images/java.jpg"
-              width="150"
-              height="100"
-              alt="SDP 200"
-            />
-            SDP 200
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://github.com/hasibulhimu49/SDP-100"
-            target="_blank"
-            style="text-decoration: "
-          >
-            <img
-              src="./images/sdp-100.jpg"
-              width="150"
-              height="100"
-              alt="SDP 200"
-            />
-            SDP 100
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://github.com/hasibulhimu49/SDP-200"
-            target="_blank"
-            style="text-decoration: "
-          >
-            <img
-              src="./images/sdp-200.jpg"
-              width="150"
-              height="100"
-              alt="SDP 200"
-            />
-            SDP 200
-          </a>
-        </li>
-
+        <div>
+          <li>
+            <h4>Java Project</h4>
+            <h6>This project developed using java language.</h6>
+            <a
+              href="https://github.com/hasibulhimu49/Java_Project"
+              target="_blank"
+              style="text-decoration: "
+            >
+              <img
+                src="./images/java.jpg"
+                width="150"
+                height="100"
+                alt="SDP 200"
+              /> 
+            </a>
+          </li>
+        </div>
+        
+        <div>
+          <li>
+            <h4>C Project</h4>
+            <h6>This project developed using C language.</h6>
+            <a
+              href="https://github.com/hasibulhimu49/SDP-100"
+              target="_blank"
+              style="text-decoration: "
+            >
+              <img
+                src="./images/sdp-100.jpg"
+                width="150"
+                height="100"
+                alt="SDP 200"
+              />
+            </a>
+          </li>
+        </div>
+       
+        <div>
+          <li>
+            <h4>C# Project</h4>
+            <h6>This project developed using C# language.</h6>
+            <a
+              href="https://github.com/hasibulhimu49/SDP-200"
+              target="_blank"
+              style="text-decoration: "
+            >
+              <img
+                src="./images/sdp-200.jpg"
+                width="150"
+                height="100"
+                alt="SDP 200"
+              />
+            </a>
+          </li>
+  
+        </div>       
       </ol>
     </section>
 
     <!--Section: Education and Experience-->
-    <section>
+    <section id="Education and Experience">
       <h2>Education and Experience</h2>
 
       <table border="1" cellpadding="8" cellspacing="0" width="50%">
@@ -118,13 +161,12 @@
 
         <tr>
           <td>Google</td>
-          <td>CEO</td>
+          <td rowspan="2" >COO </td>
           <td>2026-Present</td>
         </tr>
 
         <tr>
           <td>Amazon</td>
-          <td>COO</td>
           <td>2020-2022</td>
         </tr>
 
@@ -139,25 +181,40 @@
     </section>
 
     <!--Contact Form-->
-    <section>
+    <section id="Form">
       <h2>Contact Form</h2>
-
-      <form action="#" method="post">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
-
-        <label for="subject">Subject:</label><br />
-        <input type="text" id="subject" name="subject" required /><br /><br />
-
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="4" required></textarea ><br /><br />
-
-        <input type="submit" value="Submit"/>
-      </form>
+  <form action="https://formspree.io/f/xgeggdln"
+  method="POST">
+    <dev>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+  
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+  
+      <label for="subject">Subject:</label><br />
+      <input type="text" id="subject" name="subject" required /><br /><br />
+  
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea ><br /><br />
+  
+      <input type="submit" value="Submit"/>
+    </dev>
+    
+  </form>   
     </section>
 
+    <footer>
+      <h2>Follow me</h2>
+      <ul>
+        <li><a href="www.Facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+        <li><a href="www.Youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+      </ul>
+    </footer>
+    <div>
+      <h2>Find me</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.13681446737309!2d90.35704086053637!3d23.811876249752938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12015382851%3A0x3ceca92fcf1a72d2!2sBangladesh%20University%20of%20Business%20and%20Technology%20(BUBT)!5e0!3m2!1sen!2sbd!4v1718563318700!5m2!1sen!2sbd" width="650" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <h6>Thank you for visiting our website.</h6>
   </body>
 </html>
